@@ -14,7 +14,7 @@
 6. Associate the route table to the created subnet
 7. Add a route to 0.0.0.0/0 to Internet Gateway
 8. Add VPC-1-Public-Subnet to the Route table
-9. Make sure Subnet setting has Auto assign Public IP, so the EC2 machine can get a Public IP, we need it for SSH access
+9. Make sure Subnet setting has Auto assign Public IP, so the EC2 machine can get a Public IP, we need it for SSH access. In doing so we edit the subnet settings, from the action tab
 10. Create the Key Value Pair (For SSH'ing to EC2)
 
 ### EC2 on VPC 1 Public Subnet
