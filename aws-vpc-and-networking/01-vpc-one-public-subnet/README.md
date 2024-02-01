@@ -11,10 +11,11 @@
 3. Associate Internet Gateway to the VPC
 4. Create a Public named VPC-1-Public-Subnet with CIDR range (10.10.0.0/24)
 5. Create a Route table named (VPC-1-RT)
-6. Add a route to 0.0.0.0/0 to Internet Gateway
-7. Add VPC-1-Public-Subnet to the Route table
-8. Make sure Subnet setting has Auto assign Public IP, so the EC2 machine can get a Public IP, we need it for SSH access
-9. Create the Key Value Pair (For SSH'ing to EC2)
+6. Associate the route table to the created subnet
+7. Add a route to 0.0.0.0/0 to Internet Gateway
+8. Add VPC-1-Public-Subnet to the Route table
+9. Make sure Subnet setting has Auto assign Public IP, so the EC2 machine can get a Public IP, we need it for SSH access
+10. Create the Key Value Pair (For SSH'ing to EC2)
 
 ### EC2 on VPC 1 Public Subnet
 1. Lauch an EC2 machine with t2.micro
