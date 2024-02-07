@@ -22,8 +22,8 @@ Please follow the part 1, where we created the VPC, Public Subnet.
    Allow SSH access from Security Group VPC-1-Public-SG<br>
 3. Assign the IAM role VPC-1-EC2-S3-Role to the instance (Role created in previous step, see Prerequisite) 
 4. SSH into the instance on the Public subnet (From Previous step)
-5. Copy the content (private key of the keypair using cat name of keypair) of the downloaded PEM file on the Public instance.
-6. SSH from Public instance to Private Subnet's EC2 instance
+5. Copy the content (private key of the keypair using cat name of keypair, vi and create a file called NOVA.pem using the cmd vi nova.pem and paste the private key :wq! to exit) of the downloaded PEM file on the Public instance.
+6. SSH from Public instance to Private Subnet's EC2 instance using the Private IP address as it has no public IP
 4. Verify the following commands are NOT working
     - ping google.com
     - aws s3 ls
